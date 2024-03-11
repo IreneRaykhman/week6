@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid
+    </title>
+    <style>
+        .cell {
+            color: white;
+            font-weight: bolder;
+            text-align: center;
+            padding: 10px;
+        }
+        .container{
+            display: grid;
+            /*grid-template-columns: 20% 20% 20% 20%; */
+            grid-template-columns:250px 150px 100px ;
+            grid-template-rows: 250px 150px 100px;
+            grid-gap: 10px;
+        }
+        .cell-6 {
+            /*grid-column: 2/3;
+            grid-row: 1/2; */
+            grid-column: 2/4;
+            grid-row: 1/3;
+            /* = grid-area: 1/2/3/4;  Вначале два старта, потом два энда*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Grids
+    </h1>
+    <div class="container">
+        <div class="cell cell-1" style="background-color: red  ;">Ячейка 1</div>
+        <div class="cell cell-2" style="background-color: orange;">Ячейка 2</div>
+        <div class="cell cell-3" style="background-color: yellow  ;">Ячейка 3</div>
+        <div class="cell cell-4" style="background-color: green;">Ячейка 4</div>
+        <div class="cell cell-5" style="background-color: rgb(61, 90, 239);">Ячейка 5</div>
+        <div class="cell cell-6" style="background-color: blue;">Ячейка 6</div>
+        <div class="cell cell-7" style="background-color: rgb(255, 192, 217);">Ячейка 7</div>
+        <div class="cell cell-8" style="background-color: violet;">Ячейка 8</div>
+        <div class="cell cell-9" style="background-color: red;">Ячейка 9</div>
+        <div class="cell cell-10" style="background-color: orange;">Ячейка 10</div>
+        <div class="cell cell-11" style="background-color: yellow;">Ячейка 11</div>
+        <div class="cell cell-12" style="background-color: greenyellow;">Ячейка 12</div>
+        <div class="cell cell-13" style="background-color: green;">Ячейка 13</div>
+        <div class="cell cell-14" style="background-color: lightblue;">Ячейка 14</div>
+        <div class="cell cell-15" style="background-color: blue;">Ячейка 15</div>
+        <div class="cell cell-16" style="background-color: violet;">Ячейка 16</div>
+        <div class="cell cell-17" style="background-color: red;">Ячейка 17</div>
+        <div class="cell cell-18" style="background-color: orange;">Ячейка 18</div>
+        <div class="cell cell-19" style="background-color: yellow;">Ячейка 19</div>
+        <div class="cell cell-20" style="background-color: green;">Ячейка 20</div>
+    </div>
+</body>
+</html>
